@@ -1,8 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "rectangle.h"
 #include <stdio.h>
+
+#include "rectangle.h"
 
 using namespace std;
 
