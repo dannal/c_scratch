@@ -9,7 +9,7 @@ if using mfa, will need to generate a PAT and use it as the pwd
 git init
 git add .
 git commit -m "initial commit"
-git remote add origin https://darrenannal.visualstudio.com/c_scratch/_git/c_scratch
+git remote add origin https://github.com/dannal/c_scratch.git
 git push -u origin master
 
 
