@@ -1,0 +1,56 @@
+first time local git setup
+**************************
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+if using mfa, will need to generate a PAT and use it as the pwd
+
+# init repo
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin https://darrenannal.visualstudio.com/c_scratch/_git/c_scratch
+git push -u origin master
+
+
+
+
+
+
+Configure vscode for c/cpp build and Debugging
+**********************************************
+https://code.visualstudio.com/docs/cpp/config-wsl
+
+Terminal -> Configure Default Build Task
+
+*1. Configure Build*
+
+# adds a task.json to directory
+
+# modify generated tasks.json
+# build multiple file projects
+# will build the project regardless of which is the active file
+
+- modify 2nd args to compiler to ${workspaceFolder}/*.c
+- modify output param to "hello" or whatever you want to call it
+
+Ctrl Shift B should now build app regardless of context
+
+*2. Configure Debugging/App Launch*
+
+Run -> Add Configuration -> C++ (GDBLLDB)
+# adds a launch.json file to directory
+
+# modify generated launch.json
+- modify program param with exe name : "program": "${workspaceFolder}/hello",
+- if missing add prelaunch task reference to run build  
+            ],          
+            "preLaunchTask": "C/C++: gcc build active file",
+            "miDebuggerPath": "/usr/bin/gdb"
+
+F5 should compile/run app regardless of context
+
+Darren Annal | Cloud Solution Architect | Microsoft Australia | m: +61410533004 | e: dannal@microsoft.com  
+ 
+
+
