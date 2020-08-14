@@ -3,7 +3,8 @@ first time local git setup
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 
-if using mfa, will need to generate a PAT and use it as the pwd
+# login email/pwd
+# if using mfa, will need to generate a PAT and use it as the pwd
 
 # init repo
 git init
