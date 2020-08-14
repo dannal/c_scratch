@@ -2,7 +2,6 @@
 #include <vector>
 #include <string>
 #include <stdio.h>
-
 #include "rectangle.h"
 
 using namespace std;
