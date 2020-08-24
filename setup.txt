@@ -51,7 +51,6 @@ Run -> Add Configuration -> C++ (GDBLLDB)
 
 F5 should compile/run app regardless of context
 
-Darren Annal | Cloud Solution Architect | Microsoft Australia | m: +61410533004 | e: dannal@microsoft.com  
  
 
 
